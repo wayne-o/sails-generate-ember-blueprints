@@ -100,10 +100,10 @@ var Ember = {
 
 						json[ assocName ] = json[ assocName ].concat( record[ assoc.alias ] );
 					}
-					if ( assoc.include === "link" ) {
+					/*if ( assoc.include === "link" ) {
 						links[ assoc.alias ] = sails.config.blueprints.prefix + "/" + modelPlural + "/" + record.id + "/" + assoc.alias;
 						delete record[ assoc.alias ];
-					}
+					}*/
 					// if "index" we're already done...
 				}
 			} );
